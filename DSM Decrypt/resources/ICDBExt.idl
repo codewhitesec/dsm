@@ -1,0 +1,174 @@
+[
+	uuid(5a622071-c10c-4160-8327-20e943f41644),
+	version(1.0),
+]
+
+interface ICDBExt
+{
+	typedef struct Struct_90_t
+	{
+		long 	StructMember0;
+		[size_is(StructMember0)] byte StructMember1[];
+	}Struct_90_t;
+
+	error_status_t Proc0(
+		[in]handle_t arg_0,
+		[in]long arg_1,
+		[in]long arg_2,
+		[in][context_handle] void* arg_3,
+		[out][context_handle] void** arg_4);
+
+	error_status_t Proc1(
+		[in]handle_t arg_0,
+		[in]long arg_1,
+		[in]long arg_2,
+		[in][out][context_handle] void** arg_3);
+
+	error_status_t Proc2(
+		[in]handle_t arg_0,
+		[in]long arg_1,
+		[in]long arg_2,
+		[in]long arg_3,
+		[in]long arg_4,
+		[out][context_handle] void** arg_5);
+
+	error_status_t Proc3(
+		[in]handle_t arg_0,
+		[in]long arg_1,
+		[in]long arg_2,
+		[in][context_handle] void* arg_3,
+		[in][string] char* arg_4,
+		[in]long arg_5,
+		[out][context_handle] void** arg_6);
+
+	error_status_t Proc4(
+		[in]handle_t arg_0,
+		[in]long arg_1,
+		[in]long arg_2,
+		[in][context_handle] void* arg_3,
+		[in]long arg_4,
+		[out][string][size_is(arg_6)] char* arg_5,
+		[in]long arg_6,
+		[out]long* arg_7);
+
+	error_status_t Proc5(
+		[in]handle_t arg_0,
+		[in]long arg_1,
+		[in]long arg_2,
+		[in][context_handle] void* arg_3,
+		[in]long arg_4,
+		[out]long* arg_5);
+
+	error_status_t Proc6(
+		[in]handle_t arg_0,
+		[in]long arg_1,
+		[in]long arg_2,
+		[in][context_handle] void* arg_3,
+		[in][string] char* arg_4,
+		[in][string] char* arg_5,
+		[out][size_is(arg_7)]byte* arg_6,
+		[in]long arg_7,
+		[out]long* arg_8,
+		[out]long* arg_9);
+
+	error_status_t Proc7(
+		[in]handle_t arg_0,
+		[in]long arg_1,
+		[in]long arg_2,
+		[in][context_handle] void* arg_3,
+		[in][context_handle] void* arg_4,
+		[in][context_handle] void* arg_5,
+		[out][size_is(arg_7)]byte* arg_6,
+		[in]long arg_7,
+		[out]long* arg_8,
+		[out]long* arg_9);
+
+	error_status_t Proc8(
+		[in]handle_t arg_0,
+		[in]long arg_1,
+		[in]long arg_2,
+		[in][context_handle] void* arg_3,
+		[in][string] char* arg_4,
+		[in][string] char* arg_5,
+		[in]struct Struct_90_t* arg_6);
+
+	error_status_t Proc9(
+		[in]handle_t arg_0);
+
+	error_status_t Proc10(
+		[in]handle_t arg_0,
+		[in]long arg_1,
+		[in]long arg_2,
+		[in][context_handle] void* arg_3,
+		[in]long arg_4,
+		[out][context_handle] void** arg_5,
+		[out]long* arg_6);
+
+	error_status_t Proc11(
+		[in]handle_t arg_0,
+		[in]long arg_1,
+		[in]long arg_2,
+		[in][context_handle] void* arg_3,
+		[out][context_handle] void** arg_4);
+
+	error_status_t Proc12(
+		[in]handle_t arg_0,
+		[in]long arg_1,
+		[in]long arg_2,
+		[in][out][context_handle] void** arg_3);
+
+	error_status_t Proc13(
+		[in]handle_t arg_0,
+		[in]long arg_1,
+		[in]long arg_2,
+		[in][out][context_handle] void** arg_3);
+
+	error_status_t Proc14(
+		[in]handle_t arg_0,
+		[in]long arg_1,
+		[in]long arg_2,
+		[in][context_handle] void* arg_3,
+		[in]long arg_4,
+		[in]long arg_5,
+		[out][context_handle] void** arg_6);
+
+	error_status_t Proc15(
+		[in]handle_t arg_0,
+		[in]long arg_1,
+		[in]long arg_2,
+		[in][context_handle] void* arg_3,
+		[in][string] char* arg_4,
+		[in]long arg_5,
+		[in]long arg_6,
+		[out][context_handle] void** arg_7);
+
+	error_status_t Proc16(
+		[in]handle_t arg_0,
+		[in]long arg_1,
+		[in]long arg_2,
+		[in][context_handle] void* arg_3,
+		[in]long arg_4,
+		[out][context_handle] void** arg_5);
+
+	error_status_t Proc17(
+		[in]handle_t arg_0,
+		[in]long arg_1,
+		[in]long arg_2,
+		[in][string] char* arg_3,
+		[out][context_handle] void** arg_4);
+
+	error_status_t Proc18(
+		[in]handle_t arg_0,
+		[in][string] char* arg_1,
+		[in]long arg_2,
+		[in][string] char* arg_3,
+		[out][ref][string] char** arg_4,
+		[in]long arg_5);
+
+	error_status_t DsmDecrypt(
+		[in]handle_t rpc_handle,
+		[in][string] char* crypted,
+		[in][string] char* unknown,
+		[out, ref, string] char** decrypted,
+		[in]long unknown2);
+}

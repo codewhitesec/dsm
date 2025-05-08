@@ -1,0 +1,38 @@
+[
+	uuid(36368a9b-24ac-438c-8c49-bbab6b2761fb),
+	version(1.0),
+]
+
+interface EnteoTaskExecution
+{
+	error_status_t DsmExec(
+		[in]handle_t arg_0,
+		[out][context_handle] void** arg_1,
+		[in]long arg_2,
+		[in][string] wchar_t* arg_3,
+		[in][string] wchar_t* arg_4,
+		[in][string] wchar_t* arg_5,
+		[in]long arg_6,
+		[in]long arg_7,
+		[out]long* arg_8);
+
+	error_status_t Proc1(
+		[in]handle_t arg_0,
+		[in][out][context_handle] void** arg_1);
+
+	error_status_t Proc2(
+		[in]handle_t arg_0,
+		[in][context_handle] void* arg_1,
+		[in]long arg_2,
+		[out]long* arg_3);
+
+	error_status_t Proc3(
+		[in]handle_t arg_0,
+		[in][context_handle] void* arg_1,
+		[out]long* arg_2);
+
+	error_status_t Proc4(
+		[in]handle_t arg_0,
+		[in][context_handle] void* arg_1,
+		[in]long arg_2);
+}

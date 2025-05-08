@@ -1,0 +1,29 @@
+[
+    uuid(d5a9622a-d3db-414b-9c4f-edb1e90aef04),
+    version(1.0),
+]
+
+interface CsManExt
+{
+    error_status_t Proc0(
+        [in]long arg_1,
+        [in][string] wchar_t* arg_2,
+        [out]long* arg_3,
+        [in]long arg_4,
+        [in]long arg_5,
+        [in][string] wchar_t* arg_6,
+        [in][string] wchar_t* arg_7);
+
+    error_status_t Proc1(
+        [out]long* arg_1,
+        [out]long* arg_2);
+
+    error_status_t Proc2(
+        [in]long arg_1);
+
+    error_status_t DsmUpdate(
+        [in]handle_t arg_0,
+        [in][string] wchar_t* arg_1,
+        [in]long arg_2,
+        [out]hyper* arg_3);
+}
