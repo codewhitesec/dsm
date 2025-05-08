@@ -12,7 +12,7 @@ the following projects:
 * *TOCTOU SMB Server*: SMB server for malicious MSI installation
 
 Details regarding the different projects and the underlying techniques can
-be found within our [Blog Post](TODO).
+be found within our [blog post](https://code-white.com/blog/ivanti-desktop-and-server-management/).
 
 The respective vulnerabilities that are targeted by this repository
 were all patched long time ago. The fact that credentials stored in
